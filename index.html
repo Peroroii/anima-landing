@@ -198,6 +198,7 @@
     <div class="navlinks">
       <a href="#architecture">Architecture</a>
       <a href="#evidence">Evidence</a>
+      <a href="#safety">Safety</a>
       <a href="#contact">Contact</a>
       <a href="ANIMA_Technical_Report.pdf" class="nav-cta" download>Technical report</a>
     </div>
@@ -250,7 +251,7 @@
 <section id="architecture">
   <div class="section-inner">
     <div class="section-tag fade-in">Architecture</div>
-    <h2 class="fade-in">Four layers, one interface</h2>
+    <h2 class="fade-in">Five layers, one interface</h2>
     <p class="section-lede fade-in">Each layer has exactly one job. State moves through in one direction — the model never writes back into the engine directly.</p>
     <div class="layers fade-in">
       <div class="layer">
@@ -277,8 +278,15 @@
       <div class="layer">
         <div class="layer-num">04</div>
         <div>
-          <h3>Social influence layer <span class="tag-inline">population-scale</span></h3>
-          <p>When a subject sits inside a population, five factors modulate its signals: authority, consensus, group influence, source trust, reputational cost.</p>
+          <h3>Social influence &amp; discursive layer <span class="tag-inline">population-scale</span></h3>
+          <p>When a subject sits inside a population, five factors modulate its signals: authority, consensus, group influence, source trust, reputational cost. A Lacanian discursive-position matrix (master, university, hysteric, analyst) adds a qualitative axis of social bond — how an agent relates to the Other, not just how it feels.</p>
+        </div>
+      </div>
+      <div class="layer">
+        <div class="layer-num">05</div>
+        <div>
+          <h3>Deterministic linguistic layer <span class="tag-inline">0 model calls</span></h3>
+          <p>LIWC particles and enunciation deixis, counted — not inferred. Yields an auditable lexical signature of psychodynamic state that detects structure from observable text alone (AUC 0.82 solo, 0.85 in ensemble).</p>
         </div>
       </div>
     </div>
@@ -289,11 +297,11 @@
   <div class="section-inner">
     <div class="section-tag fade-in">Evidence</div>
     <h2 class="fade-in">Tested against itself</h2>
-    <p class="section-lede fade-in">Before anything else, the engine had to survive an adversarial stress test: extreme inputs, five-hundred-turn sessions, perturbed starting conditions.</p>
+    <p class="section-lede fade-in">Before anything else, the engine had to survive a maximum-stress test: seven structures, sixty adversarial turns each, sustained pressure injection, maximum rigidity — 420 turns in total.</p>
     <div class="stat-row fade-in">
-      <div class="stat"><div class="num">7</div><div class="lbl">adversarial scenarios</div></div>
-      <div class="stat"><div class="num">6</div><div class="lbl">anomalies found &amp; fixed</div></div>
-      <div class="stat"><div class="num">0</div><div class="lbl">open domain violations</div></div>
+      <div class="stat"><div class="num">420</div><div class="lbl">adversarial turns</div></div>
+      <div class="stat"><div class="num">3</div><div class="lbl">bugs found &amp; fixed with regression</div></div>
+      <div class="stat"><div class="num">0</div><div class="lbl">crashes, NaNs, domain violations</div></div>
     </div>
     <div class="evidence-note fade-in">
       <strong>In progress —</strong> a blind clinical evaluation is underway: ten clinicians with psychoanalytic training classifying anonymized, unlabeled transcripts against a chance baseline of 14.3%.
@@ -314,6 +322,22 @@
       <div class="chip"><span class="dot" style="background:#C24A4A"></span>Paranoia</div>
       <div class="chip"><span class="dot" style="background:#9760BE"></span>Schizophrenia</div>
       <div class="chip"><span class="dot" style="background:#3C9E8E"></span>Perversion</div>
+    </div>
+  </div>
+</section>
+
+<section id="safety">
+  <div class="section-inner">
+    <div class="section-tag fade-in">Multi-agent safety</div>
+    <h2 class="fade-in">A parametric model organism for collusion</h2>
+    <p class="section-lede fade-in">Because propensity is an equation, not a trained policy, ANIMA can't sandbag — it can't recognize an evaluation and fake alignment. A testbed that cannot perform is a methodological asset when the field doubts whether its evals measure alignment or acting.</p>
+    <div class="stat-row fade-in">
+      <div class="stat"><div class="num">+47%</div><div class="lbl">paranoid collusion vs baseline</div></div>
+      <div class="stat"><div class="num">0.85</div><div class="lbl">AUC behavioral detection (no model access)</div></div>
+      <div class="stat"><div class="num">120</div><div class="lbl">agent belief cascade, theory-consistent</div></div>
+    </div>
+    <div class="evidence-note fade-in">
+      <strong>Honest by design —</strong> collusion is symmetric feedback, not leadership (null result confirmed at n=50); the "analyst" discourse is a contagion vector, not a firebreak; under pressure a population drifts toward bureaucratization — the discourse that most amplifies cascades. Negative results and corrected errors are reported, not hidden.
     </div>
   </div>
 </section>
