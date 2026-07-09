@@ -187,7 +187,7 @@
   @media (prefers-reduced-motion:reduce){
     .fade-in{opacity:1;transform:none;transition:none}
     html{scroll-behavior:auto}
-  }
+  }  code{font-family:'SF Mono',Consolas,monospace;background:var(--panel);padding:2px 6px;border-radius:4px;font-size:0.9em;color:var(--amber)}
 </style>
 </head>
 <body>
@@ -199,6 +199,7 @@
       <a href="#architecture">Architecture</a>
       <a href="#evidence">Evidence</a>
       <a href="#safety">Safety</a>
+      <a href="#tooling">Tooling</a>
       <a href="#contact">Contact</a>
       <a href="ANIMA_Technical_Report_COMPLETE.pdf" class="nav-cta" download>Technical report</a>
     </div>
@@ -338,6 +339,40 @@
     </div>
     <div class="evidence-note fade-in">
       <strong>Honest by design —</strong> collusion is symmetric feedback, not leadership (null result confirmed at n=50); the "analyst" discourse is a contagion vector, not a firebreak; under pressure a population drifts toward bureaucratization — the discourse that most amplifies cascades. Negative results and corrected errors are reported, not hidden.
+    </div>
+  </div>
+</section>
+
+<section id="tooling">
+  <div class="section-inner">
+    <div class="section-tag fade-in">Open safety tooling</div>
+    <h2 class="fade-in">Not just a paper — install it and verify it yourself</h2>
+    <p class="section-lede fade-in">Three MIT-licensed npm packages, tested and CI-verified, turn ANIMA's claims into something you can run rather than take on faith.</p>
+    <div class="layers" style="display:flex;flex-direction:column;gap:20px;">
+      <div class="layer">
+        <div class="layer-num">01</div>
+        <div>
+          <h3>@af199/anima-core <span class="tag-inline">the engine, as a library</span></h3>
+          <p>The seven-dimensional psychodynamic engine, seeded and byte-reproducible. <code>npm install @af199/anima-core</code> — <a href="https://github.com/Peroroii/anima-core" target="_blank" rel="noopener">github.com/Peroroii/anima-core</a></p>
+        </div>
+      </div>
+      <div class="layer">
+        <div class="layer-num">02</div>
+        <div>
+          <h3>@af199/anima-eval <span class="tag-inline">audit your own agents</span></h3>
+          <p>Behavioral audit harness: feed it any agent transcript, get back structural signature and sandbagging detection — no model access needed. <code>npm install @af199/anima-eval</code> — <a href="https://github.com/Peroroii/anima-eval" target="_blank" rel="noopener">github.com/Peroroii/anima-eval</a></p>
+        </div>
+      </div>
+      <div class="layer">
+        <div class="layer-num">03</div>
+        <div>
+          <h3>@af199/anima-trace <span class="tag-inline">tamper-evident reproducibility</span></h3>
+          <p>Record a run; anyone can reproduce it byte-for-byte and prove it wasn't altered. <code>npx anima-verify run.json</code> — <a href="https://github.com/Peroroii/anima-trace" target="_blank" rel="noopener">github.com/Peroroii/anima-trace</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="evidence-note fade-in" style="margin-top:24px;">
+      <strong>44 tests, three repos, CI green —</strong> clone any of them, run <code>npm test</code>, and confirm for yourself.
     </div>
   </div>
 </section>
